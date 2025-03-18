@@ -1,16 +1,8 @@
-package main
+package sorting
 
 import "fmt"
 
-func main() {
-	arr1 := []int{1, 3, 5, 7}
-	arr2 := []int{2, 4, 6, 8}
-	sort := task1(arr1, arr2)
-	fmt.Println(sort)
-
-}
-
-func task1(arr1, arr2 []int) []int {
+func Task1Bubble(arr1, arr2 []int) []int {
 	mergedArr := append(arr1, arr2...)
 	fmt.Println(mergedArr)
 	for i := 0; i < len(mergedArr)-1; i++ {
